@@ -108,7 +108,7 @@ Experience the live demo of this project here:
 1. Install XAMPP or WAMP on your machine.
 2. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/student-library-result-system.git
+   gh repo clone minjarul1/student-data-management
 
 
 ## Tech Stack
@@ -191,7 +191,7 @@ Experience the live demo of this project here:
 
 3. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/student-library-result-system.git
+    gh repo clone minjarul1/student-data-management
    ```
 
 4. **Update Database Configuration**:
@@ -218,8 +218,7 @@ To ensure that the application functions as expected, follow these steps:
    - Clone the repository and place it in the `htdocs` folder (for XAMPP) or `www` folder (for WAMP).
 
      ```bash
-     git clone https://github.com/your-username/student-library-result-system.git
-     mv student-library-result-system /path-to-xampp/htdocs/
+     gh repo clone minjarul1/student-data-management
      ```
 
 2. **Database Setup**:
