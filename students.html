@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Red gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff7e5f;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #feb47b;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        /* Navigation buttons styles */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-btn {
+            background-color: #ff7e5f;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            width: 200px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-btn:hover {
+            background-color: #feb47b;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-btn:focus {
+            outline: none;
+        }
+
+        .nav-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form action="../submit_button/submit_student.php" method="post">
+            <div class="form-group">
+                <label for="student_id">Student ID</label>
+                <input type="text" id="student_id" name="student_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course</label>
+                <input type="text" id="course" name="course" required>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" id="year" name="year" required>
+            </div>            
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="button-container">
+        <a href="library.html">
+            <button class="nav-btn">Library Form</button>
+        </a>
+        <a href="result.html">
+            <button class="nav-btn">Result Form</button>
+        </a>
+        <a href="home.html">
+            <button class="nav-btn">Home</button>
+        </a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column; /* Stacks the form and buttons vertically */
+        }
+
+        .form-container {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 30px; /* Adds some space between the form and the buttons */
+        }
+
+        .form-container h1 {
+            margin-bottom: 25px;
+            font-size: 2rem;
+            color: #444;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: #a1c4fd;
+            outline: none;
+            box-shadow: 0 0 8px rgba(161, 196, 253, 0.6);
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #2193b0, #6dd5ed);
+        }
+
+        /* Navigation buttons styling */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: fixed; /* Position fixed at the bottom of the page */
+            bottom: 20px; /* Distance from the bottom */
+            left: 50%;
+            transform: translateX(-50%); /* Centers the buttons horizontally */
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, #ff6a00, #ff4e00);
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+            text-align: center;
+            width: 180px;
+            box-shadow: 0 4px 15px rgba(255, 94, 0, 0.4);
+        }
+
+        .nav-btn:hover {
+            background: linear-gradient(135deg, #ff4e00, #ff6a00);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 94, 0, 0.6);
+        }
+
+        .nav-btn:active {
+            transform: scale(0.98);
+        }
+
+        .nav-btn:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Results Form</h1>
+        <form action="../submit_button/submit_result.php" method="POST">
+            <div class="form-group">
+                <label for="student_id">Student ID:</label>
+                <input type="number" id="student_id" name="student_id" placeholder="Enter the student ID" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject name" required>
+            </div>
+            <div class="form-group">
+                <label for="marks">Marks:</label>
+                <input type="number" id="marks" name="marks" placeholder="Enter marks obtained">
+            </div>
+            <div class="form-group">
+                <label for="grade">Grade:</label>
+                <input type="text" id="grade" name="grade" placeholder="Enter the grade (e.g., A, B)" maxlength="2">
+            </div>
+            <div class="form-group">
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" name="semester" placeholder="Enter the semester">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="button-container">
+        <a href="library,library.html">
+            <button class="nav-btn">Library Form</button>
+        </a>
+        <a href="library,students.html">
+            <button class="nav-btn">student Form</button>
+        </a>
+        <a href="home.html">
+            <button class="nav-btn">Home</button>
+        </a>
+    </div>
+
+</body>
+</html>

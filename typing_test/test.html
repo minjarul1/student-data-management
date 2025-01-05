@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangla Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bangla Typing Speed Test</h1>
+    </header>
+
+    <main>
+        <section id="test-setup">
+            <label for="duration">Choose Test Duration (minutes):</label>
+            <select id="duration">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button id="start-test">Start Test</button>
+        </section>
+
+        <section id="typing-test" style="display:none;">
+            <div id="text-container">
+                <p id="test-text">Loading text...</p>
+            </div>
+            <textarea id="input-area" placeholder="Start typing here..." disabled></textarea>
+            <div id="test-info">
+                <p>Time Left: <span id="time-left">0:00</span></p>
+                <p>Words Per Minute: <span id="wpm">0</span></p>
+                <p>Errors: <span id="errors">0</span></p>
+            </div>
+        </section>
+
+        <section id="results" style="display:none;">
+            <h2>Test Results</h2>
+            <p>Duration: <span id="result-duration"></span> minutes</p>
+            <p>Words Per Minute: <span id="result-wpm"></span></p>
+            <p>Errors: <span id="result-errors"></span></p>
+            <button id="restart-test">Restart Test</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bangla Typing Speed Test</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

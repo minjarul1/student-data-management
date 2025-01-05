@@ -1,0 +1,10 @@
+*{ margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+.container{
+    background-color: rgb(190, 132, 54);
+    max-width: 100%;
+}
+
+.container h1 { text-align: center;}

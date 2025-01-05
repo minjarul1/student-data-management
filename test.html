@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 40px;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center; /* Center align buttons */
+        }
+
+        .nav-btn {
+            background-color: #ff7e5f;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            width: 250px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-btn:hover {
+            background-color: #feb47b;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-btn:focus {
+            outline: none;
+        }
+
+        .nav-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-btn {
+                width: 200px; /* Slightly smaller buttons on smaller screens */
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .nav-btn {
+                width: 180px; /* Even smaller buttons for very small screens */
+                font-size: 0.9rem;
+                padding: 10px 18px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="home"><h1>This is home page </h1></div>
+
+<div class="button-container">
+    <a href="students.html">
+        <button class="nav-btn">Student Form</button>
+    </a>
+    <a href="library.html">
+        <button class="nav-btn">Library Form</button>
+    </a>
+    <a href="result.html">
+        <button class="nav-btn">Result Form</button>
+    </a>
+    <a href="../view_all_data/view.php">
+        <button class="nav-btn">View Table</button>
+    </a>
+</div>
+
+</body>
+</html>
